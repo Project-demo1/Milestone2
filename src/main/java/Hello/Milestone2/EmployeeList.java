@@ -14,7 +14,7 @@ public class EmployeeList {
     public void display(){
         int i=1;
         for(Employee employee:this.employeeList){
-            System.out.println("Employee"+i+" ::: id: "+employee.getId()+" name: "+employee.getName()+" salary: "+employee.getSalary()+" age: "+employee.getAge());
+            System.out.println("Employee"+i+" ::: id: "+employee.getId()+" name: "+employee.getName()+" purchaseamount: "+employee.getPurchaseamount()+" age: "+employee.getAge());
             i++;
         }
     }
@@ -28,12 +28,12 @@ public class EmployeeList {
         });
     }
   
-    public boolean update(int id, int salary) {
+    public boolean update(int id, int purchaseamount) {
         boolean flag=false;
         for(Employee employee:this.employeeList){
             if(employee.getId()==id){
                 flag=true;
-                employee.setSalary(salary);
+                employee.setPurchaseamount(purchaseamount);
             }
         }
         return flag;
