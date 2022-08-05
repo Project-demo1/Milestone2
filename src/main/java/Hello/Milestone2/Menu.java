@@ -22,7 +22,7 @@ public class Menu {
          //switch case
         switch (key){
             
-            case 1: //Press 1 will display all the record in descending order
+            case 1: //Press 1 will display all the record in ascending order
                 employeeList1.sort();
                 employeeList1.display();
                 break;
@@ -31,7 +31,7 @@ public class Menu {
                 int id = s.nextInt();
                 System.out.println("Enter employee updated salary");
                 int salary = s.nextInt();
-                if(employeeList1.update(id,salary)){
+                if(employeeList1.update(id,purchase amount)){
                     employeeList1.display();
                 }
                 else{
